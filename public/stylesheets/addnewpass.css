@@ -17,15 +17,18 @@ body {
 }
 
 #logbox {
+  margin-top: 30px;
   padding: 10px;
-  margin: 50px 175px;
-  width: 800px;
+  margin: 150px auto;
+  width: 80%;
   background-color: #fff;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 }
-
+.widthset {
+  width: 80%;
+}
 h1 {
   text-align: center;
   font-size: 175%;

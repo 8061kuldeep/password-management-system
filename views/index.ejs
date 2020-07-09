@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1 class="text-center">
+      Password Managemet System
+      <DIV>
+        <img src="/images/safety.svg" alt="/" height="80px" width="100xp" />
+        <spam class="text-success text-center">PMS</spam></DIV
+      >
+    </h1>
+
+    <!------ Include the above in your HEAD tag ---------->
+
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+          <img
+            src="/images/police.svg"
+            id="icon"
+            alt="User Icon"
+            width="100px"
+            height="100px"
+            padding="20px"
+          />
+        </div>
+
+        <%if(msg!=""){%>
+        <div class="alert alert-danger"><strong>Alert!</strong> <%=msg%></div>
+        <%}%>
+        <form action="/" method="post">
+          <input
+            type="text"
+            id="login"
+            class="fadeIn second"
+            name="username"
+            placeholder="Enter Username"
+          />
+          <input
+            type="text"
+            id="password"
+            class="fadeIn third"
+            name="password"
+            placeholder="Enter Password"
+          />
+          <input type="submit" class="fadeIn fourth" value="Log In" />
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+          <p>
+            not a user!
+            <a class="underlineHover" href="/signup">register here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

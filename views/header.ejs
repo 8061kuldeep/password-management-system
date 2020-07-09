@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a href="/"
+    ><img src="/images/safety.svg" alt="/" height="80px" width="100xp"
+  /></a>
+  <a class="navbar-brand" href="/"><h1 class="text-success">PMS</h1></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/"
+          >Home <span class="sr-only">(current)</span></a
+        >
+      </li>
+
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Password Category
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="add_new_category">Add new Category</a>
+          <a class="dropdown-item" href="view_all_category"
+            >View all Category</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Password Details
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="add_new_password">Add new Password</a>
+          <a class="dropdown-item" href="view_all_password"
+            >View all Password</a
+          >
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/logout"
+          >Logout <span class="sr-only">(current)</span></a
+        >
+      </li>
+    </ul>
+    <div class="float-right"><h3><%=cusername%></h3></div>
+  </div>
+</nav>
